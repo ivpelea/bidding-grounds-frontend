@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$main-bg-color: #f0f0f0;
+$main-font-color: #4b4b4b;
+$lite-font-color: #545454;
+$dark-bg-color: #4b4b4b;
+// TAGS
+body {
+    background-color: $main-bg-color;
+    font-family: 'Righteous'!important;
+}
+hr {
+    border-top: 1px solid $lite-font-color!important;
+}
+
+// CLASSES
+.btn-primary {
+    background-color: rgb(224, 162, 103); 
+    color: rgb(255, 255, 255); 
+    font-weight: 700; padding: 10px; 
+    cursor: pointer; 
+    margin: auto;
+    border-color: rgb(224, 162, 103);
+    border-radius: 0;
+    width: 100%;
+}
+.bg-dark {
+    background-color: $main-bg-color!important;
+    a {
+        color: $main-font-color!important;
+        font-weight: 600;
+        font-size: 19px;
+    }
+    img {
+        width: 192px;
+    }
+    p {
+        color: $main-font-color;
+        margin-top: unset;
+        margin: auto 10px auto;
+        font-weight: 300;
+    }
+}
+.top-item{
+    padding: 10px 10px;
+    background-color: #fff;
+    .header{
+        padding-top: 50px;
+        padding-left: 90px;
+        padding-right: 90px;
+        p {
+            margin: 0;
+            font-family: 'Josefin Sans';
+        }
+        h1 {
+            font-size: 55px;
+            font-weight: 600;
+        }
+    }
+    .item-title{
+        p {
+            font-size: 20px;
+        }
+    }
+    .item-details{
+        .header {
+            padding: 0;
+           p {
+            font-size: 16px;
+            letter-spacing:0.25vw;
+            font-family: 'Josefin Sans';
+           }
+        }
+    }
+    .price-bid-time {
+        
+        font-size: 40px;
+        font-weight: 700;
+        .price {
+            color: rgb(64, 228, 79);
+        }
+        .divider {
+            color: $lite-font-color!important;
+            padding: 0px 45px
+        }
+        .bid-time {
+            color:$lite-font-color;
+        }
+    }
+    .uploader-name{
+        font-family: 'Josefin Sans';
+        font-size: 20px
+    }
+}
+.hot-items {
+    padding: 20px 10px;
+    background-color: #fff;
+    .hot-item-header {
+        img, p {
+            display: inline-block;
+        }
+        img {
+            width: 20px;
+            margin: 10px;
+        }
+        p {
+            margin: 0;
+            letter-spacing:0.75vw;
+            font-family: 'Josefin Sans';
+            
+        }
+        hr{
+            width: 60%;
+        }
+        padding: 0px;
+    }
+    .item-card{
+        display: inline-block;
+        width: 31%;
+        margin: 10px;
+        padding: 10px 10px;
+        background-color: #f0f0f0;
+        .header{
+            p {
+                margin: 0;
+                font-family: 'Josefin Sans';
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 55px;
+                font-weight: 600;
+            }
+            hr {
+                margin-top: 0;
+            }
+        }
+        .item-title{
+            p {
+                font-size: 20px;
+            }
+        }
+        .item-featured-image {
+            img {
+                width: 100%;
+            }
+        }
+        .item-details{
+            .header {
+                padding: 0;
+               p {
+                font-size: 16px;
+                letter-spacing:0.25vw;
+                font-family: 'Josefin Sans';
+               }
+            }
+        }
+        .price-bid-time {
+            
+            font-size: 20px;
+            font-weight: 700;
+            .price {
+                color: rgb(64, 228, 79);
+            }
+            .divider {
+                color: $lite-font-color!important;
+                padding: 0px 25px
+            }
+            .bid-time {
+                color:$lite-font-color;
+            }
+        }
+        .uploader-name{
+            font-family: 'Josefin Sans';
+            font-size: 14px
+        }
+    }
+}
