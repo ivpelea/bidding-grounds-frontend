@@ -15,6 +15,74 @@ hr {
 }
 
 // CLASSES
+#__how-bid-works-modal {
+    color: #545454;
+    .modal-content {
+        background-color: #e4ab77!important;
+        border-radius: 0px;
+        .modal-header, .modal-footer {
+            border-bottom: 0!important; 
+            border-top: 0!important; 
+            text-align: center;
+            padding-bottom: 0;
+        }
+        .modal-body {
+            padding-top: 0;
+            .body-header {
+                h1 {
+                    span {
+                        color: #fff;
+                    }
+                }
+                p {
+                    font-family: 'Josefin Sans';
+                    letter-spacing:.5vw;
+                    font-size: 13px;
+    
+                }
+                hr {
+                    border: 1px solid rgb(128, 128, 128);
+                }
+            }
+            .body-content-list {
+                .content {
+                    margin-bottom: 10px;
+                    div {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .image {
+                        width: 150px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .text {
+                        text-align: left;
+                        width: 310px;
+                        p {
+                            font-family: 'Josefin Sans';
+                            margin: 0px;
+                            font-size: 18px;
+                            span {
+                                font-family: 'Righteous';
+                                font-weight: 500;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.modal-content {
+    box-shadow: 0 0 20px #9ecaed;
+}
+.vl {
+    border-right: 1px solid #fff;
+}
+
 .btn-primary {
     background-color: rgb(224, 162, 103); 
     color: rgb(255, 255, 255); 
@@ -24,6 +92,11 @@ hr {
     border-color: rgb(224, 162, 103);
     border-radius: 0;
     width: 100%;
+}
+.btn-primary:hover {
+    background-color: transparent; 
+    color: rgb(224, 162, 103);
+    border-color: rgb(224, 162, 103);
 }
 .bg-dark {
     background-color: $main-bg-color!important;
@@ -42,57 +115,72 @@ hr {
         font-weight: 300;
     }
 }
-.top-item{
-    padding: 10px 10px;
-    background-color: #fff;
-    .header{
-        padding-top: 50px;
-        padding-left: 90px;
-        padding-right: 90px;
-        p {
-            margin: 0;
-            font-family: 'Josefin Sans';
+#__bidding-home {
+    .top-item{
+        padding: 10px 10px;
+        background-color: #fff;
+        height: 100%;
+        .header{
+            padding-top: 50px;
+            padding-left: 90px;
+            padding-right: 90px;
+            p {
+                margin: 0;
+                font-family: 'Josefin Sans';
+            }
+            h1 {
+                font-size: 55px;
+                font-weight: 600;
+            }
         }
-        h1 {
-            font-size: 55px;
-            font-weight: 600;
+        .content {
+            padding-bottom: 50px;
+            .item-title{
+                p {
+                    font-size: 20px;
+                }
+            }
+            .item-featured-image {
+                max-width: 522px;
+                margin: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            .item-details{
+                .header {
+                    padding: 0;
+                   p {
+                    font-size: 16px;
+                    letter-spacing:0.25vw;
+                    font-family: 'Josefin Sans';
+                   }
+                }
+            }
+            .price-bid-time {
+                
+                font-size: 40px;
+                font-weight: 700;
+                .price {
+                    color: rgb(64, 228, 79);
+                }
+                .divider {
+                    color: $lite-font-color!important;
+                    padding: 0px 45px
+                }
+                .bid-time {
+                    color:$lite-font-color;
+                }
+            }
+            .uploader-name{
+                font-family: 'Josefin Sans';
+                font-size: 20px
+            }
         }
-    }
-    .item-title{
-        p {
-            font-size: 20px;
-        }
-    }
-    .item-details{
-        .header {
-            padding: 0;
-           p {
-            font-size: 16px;
-            letter-spacing:0.25vw;
-            font-family: 'Josefin Sans';
-           }
-        }
-    }
-    .price-bid-time {
         
-        font-size: 40px;
-        font-weight: 700;
-        .price {
-            color: rgb(64, 228, 79);
-        }
-        .divider {
-            color: $lite-font-color!important;
-            padding: 0px 45px
-        }
-        .bid-time {
-            color:$lite-font-color;
-        }
-    }
-    .uploader-name{
-        font-family: 'Josefin Sans';
-        font-size: 20px
     }
 }
+
 .hot-items {
     padding: 20px 10px;
     background-color: #fff;
@@ -115,64 +203,281 @@ hr {
         }
         padding: 0px;
     }
+    
+}
+.item-list {
+    text-align: center;
     .item-card{
+        position: relative;
         display: inline-block;
-        width: 31%;
+        width: 280px;
         margin: 10px;
-        padding: 10px 10px;
-        background-color: #f0f0f0;
-        .header{
-            p {
-                margin: 0;
-                font-family: 'Josefin Sans';
-                font-size: 14px;
-            }
-            h1 {
-                font-size: 55px;
-                font-weight: 600;
-            }
-            hr {
-                margin-top: 0;
+        .item-bookmark {
+            img {
+                width: 10%;
+                float: right;
+                margin-top: -13px;
+                /* margin-right: 0%; */
+                right: -1px;
+                position: absolute;
             }
         }
-        .item-title{
-            p {
+        .item-details {
+            padding: 10px 10px;
+            background-color: #f0f0f0;
+            .header{
+                p {
+                    margin: 0;
+                    font-family: 'Josefin Sans';
+                    font-size: 14px;
+                }
+                h1 {
+                    font-size: 55px;
+                    font-weight: 600;
+                }
+                hr {
+                    margin-top: 0;
+                }
+            }
+            .item-title{
+                p {
+                    font-size: 20px;
+                }
+            }
+            .item-featured-image {
+                img {
+                    width: 100%;
+                }
+            }
+            .item-details{
+                .header {
+                    padding: 0;
+                   p {
+                    font-size: 16px;
+                    letter-spacing:0.25vw;
+                    font-family: 'Josefin Sans';
+                   }
+                }
+            }
+            .price-bid-time {
+                
                 font-size: 20px;
+                font-weight: 700;
+                .price {
+                    color: rgb(64, 228, 79);
+                }
+                .divider {
+                    color: $lite-font-color!important;
+                    padding: 0px 10px;
+                }
+                .bid-time {
+                    color:$lite-font-color;
+                }
+            }
+            .uploader-name{
+                font-family: 'Josefin Sans';
+                font-size: 14px
             }
         }
-        .item-featured-image {
+        .item-retail-price {
+            p {
+                font-family: 'Arial';
+                text-align:center; 
+                letter-spacing:1px; 
+                font-weight: 200; 
+                word-spacing: 10px;
+                font-size: 10px;
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+.how-bid-works {
+    background-color: #767676;
+    padding: 20px;
+    color: #fff;
+    .header {
+        
+        font-family: 'Josefin Sans';
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+        hr {
+            border-top: 1px solid !important;
+        }
+    }
+    .content {
+        .detail {
+            display: inline-block;
+        }
+        .icon, .text-content{
+            display: inline-block;
+            vertical-align: middle;
+        }
+       
+        .icon {
+            width: 50px;
+            margin: 0px 15px;
             img {
                 width: 100%;
             }
         }
-        .item-details{
-            .header {
-                padding: 0;
-               p {
-                font-size: 16px;
-                letter-spacing:0.25vw;
-                font-family: 'Josefin Sans';
-               }
+        .text-content {
+            text-align: left;
+            max-width: 375px;
+            p {
+                margin: 0;
+                span {
+                    color: rgb(224, 162, 103);
+                }
             }
         }
-        .price-bid-time {
-            
-            font-size: 20px;
-            font-weight: 700;
-            .price {
-                color: rgb(64, 228, 79);
-            }
-            .divider {
-                color: $lite-font-color!important;
-                padding: 0px 25px
-            }
-            .bid-time {
-                color:$lite-font-color;
-            }
+    }
+}
+#__item-show-room {
+    margin: 15px;
+    background-color: #fff;
+    
+    .header {
+        margin: 15px 0px;
+        h1 {
+            font-size: 58px;
+            margin: 0;
         }
-        .uploader-name{
+        p {
             font-family: 'Josefin Sans';
-            font-size: 14px
+            font-size: 14px;
+            word-spacing:0.5vw
+        }
+    }
+    .top-item{
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        width: 100%;
+        margin: 10px;
+        // height: 100%;
+        .header {
+            padding: 10px;
+        }
+        .item-bookmark {
+            img {
+                width: 10%;
+                float: right;
+                margin-top: -13px;
+                /* margin-right: 0%; */
+                right: -1px;
+                position: absolute;
+            }
+        }
+        .item-details {
+            padding: 10px 10px;
+            background-color: #f0f0f0;
+            .header{
+                p {
+                    margin: 0;
+                    font-family: 'Josefin Sans';
+                    font-size: 14px;
+                }
+                h1 {
+                    font-size: 55px;
+                    font-weight: 600;
+                }
+                hr {
+                    margin-top: 0;
+                }
+            }
+            .item-title{
+                p {
+                    font-size: 20px;
+                }
+            }
+            .item-featured-image {
+                img {
+                    width: 100%;
+                }
+            }
+            .item-details{
+                .header {
+                    padding: 0;
+                   p {
+                    font-size: 16px;
+                    letter-spacing:0.25vw;
+                    font-family: 'Josefin Sans';
+                   }
+                }
+            }
+            .price-bid-time {
+                
+                font-size: 20px;
+                font-weight: 700;
+                .price {
+                    color: rgb(64, 228, 79);
+                }
+                .divider {
+                    color: $lite-font-color!important;
+                    padding: 0px 10px;
+                }
+                .bid-time {
+                    color:$lite-font-color;
+                }
+            }
+            .uploader-name{
+                font-family: 'Josefin Sans';
+                font-size: 14px
+            }
+        }
+        .item-retail-price {
+            p {
+                font-family: 'Arial';
+                text-align:center; 
+                letter-spacing:1px; 
+                font-weight: 200; 
+                word-spacing: 10px;
+                font-size: 10px;
+                margin: 10px 0px;
+            }
+        }
+        
+    }
+}
+#__footer {
+    padding-top: 100px;
+    background-color: #545454;
+    hr {
+        border-top: 1px solid #fff !important;
+    }
+    .footer-content, .footer-content-divider {
+        display: inline-block;
+    }
+    .vl {
+        height: 300px;
+        margin: auto;
+    }
+    .left {
+        width: 50%;
+    }
+    .right {
+        width: 50%;
+        text-align: left;
+        color: #fff;
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+        padding: 10px;
+    }
+    .bottom-footer {
+        div {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            width: 620px;
+            img {
+                width: 40px;
+                margin: 0px 10px;
+            }
         }
     }
 }
