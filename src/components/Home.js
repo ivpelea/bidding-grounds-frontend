@@ -6,10 +6,13 @@ import MoneyIcon from '../assets/images/money-icon.png'
 import ClockIcon from '../assets/images/clock-icon.png'
 import WinIcon from '../assets/images/win-icon.png'
 import BidsIcon from '../assets/images/bids-icon.png'
+import Header from './Header'
+import Footer from './Footer'
 
 function Home() {
   return (
     <React.Fragment>
+      <Header />
       <section id="__bidding-home">
         <div className="container-fluid">
           <div className="row">
@@ -793,6 +796,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </React.Fragment>
   )
 }

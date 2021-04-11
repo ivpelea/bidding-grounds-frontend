@@ -93,8 +93,8 @@ function Header() {
                                 <Navbar.Collapse id="responsive-navbar-nav">
                                     {/* CENTER NAV MENU */}
                                     <Nav className="mx-auto">
-                                        <Nav.Link href="#start-bidding">START BIDDING</Nav.Link>
-                                        <Nav.Link href="#item-showroom">ITEM SHOWROOM</Nav.Link>
+                                        <Nav.Link href="/">START BIDDING</Nav.Link>
+                                        <Nav.Link href="/item-showroom">ITEM SHOWROOM</Nav.Link>
                                         <Nav.Link href="#how-it-works" onClick={showModal.bind(this)}>HOW IT WORKS</Nav.Link>
                                         <Nav.Link href="#bid-packs">BID PACKS</Nav.Link>
                                         </Nav>

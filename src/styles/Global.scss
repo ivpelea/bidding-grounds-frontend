@@ -205,6 +205,13 @@ hr {
     }
     
 }
+
+@mixin standard {
+    @media only screen and (max-width:1366px) {
+        @content;
+    }
+}
+
 .item-list {
     text-align: center;
     .item-card{
@@ -212,6 +219,7 @@ hr {
         display: inline-block;
         width: 280px;
         margin: 10px;
+        
         .item-bookmark {
             img {
                 width: 10%;
@@ -288,6 +296,16 @@ hr {
                 word-spacing: 10px;
                 font-size: 10px;
                 margin: 10px 0px;
+            }
+        }
+    }
+    @include standard {
+        .item-card{
+            width: 185px!important;
+            .item-bookmark {
+                img {
+                    width: 15%;
+                }
             }
         }
     }
