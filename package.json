@@ -1,6 +1,6 @@
 {
   "name": "bidding-grounds-frontend",
-  "homepage": "https://biddinggrounds.cerberusph.com/react",
+  "homepage": "https://biddinggrounds.cerberusph.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
