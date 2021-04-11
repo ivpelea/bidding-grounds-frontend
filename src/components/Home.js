@@ -8,9 +8,9 @@ import WinIcon from '../assets/images/win-icon.png'
 import BidsIcon from '../assets/images/bids-icon.png'
 
 function Home() {
-    return (
-        <React.Fragment>
-            <section id="__bidding-home">
+  return (
+    <React.Fragment>
+      <section id="__bidding-home">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6">
@@ -18,14 +18,14 @@ function Home() {
                 <div className="header text-center">
                   <p>INTRODUCING THIS MONTH'S</p>
                   <h1>TOP ITEM</h1>
-                  <hr/>
+                  <hr />
                 </div>
                 <div className="content">
                   <div className="item-title">
                     <p>HARLEY DAVIDSON</p>
                   </div>
                   <div className="item-featured-image">
-                    <img src={ItemIcon} alt="ItemIcon"/>
+                    <img src={ItemIcon} alt="ItemIcon" />
                   </div>
                   <div className="item-details">
                     <div className="header">
@@ -49,23 +49,23 @@ function Home() {
             <div className="col-lg-6">
               <div className="hot-items">
                 <div className="hot-item-header text-center">
-                  <img src={FireIcon} alt="FireIcon"/>
-                  <p>TODAY'S <span style={{color: "red"}}>HOT ITEMS</span></p>
-                  <hr/>
+                  <img src={FireIcon} alt="FireIcon" />
+                  <p>TODAY'S <span style={{ color: "red" }}>HOT ITEMS</span></p>
+                  <hr />
                 </div>
                 <div className="item-list">
                   <div className="item-card text-center">
                     <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                      <img src={BookmarkIcon} alt="BookmarkIcon" />
                     </div>
                     <div className="item-details">
                       <div className="header text-center">
                         <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                        <hr />
                       </div>
                       <div className="content">
                         <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                          <img src={ItemIcon} alt="ItemIcon" />
                         </div>
                         <div className="item-details">
                           <div className="price-bid-time">
@@ -88,16 +88,16 @@ function Home() {
                   </div>
                   <div className="item-card text-center">
                     <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                      <img src={BookmarkIcon} alt="BookmarkIcon" />
                     </div>
                     <div className="item-details">
                       <div className="header text-center">
                         <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                        <hr />
                       </div>
                       <div className="content">
                         <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                          <img src={ItemIcon} alt="ItemIcon" />
                         </div>
                         <div className="item-details">
                           <div className="price-bid-time">
@@ -120,16 +120,16 @@ function Home() {
                   </div>
                   <div className="item-card text-center">
                     <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                      <img src={BookmarkIcon} alt="BookmarkIcon" />
                     </div>
                     <div className="item-details">
                       <div className="header text-center">
                         <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                        <hr />
                       </div>
                       <div className="content">
                         <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                          <img src={ItemIcon} alt="ItemIcon" />
                         </div>
                         <div className="item-details">
                           <div className="price-bid-time">
@@ -152,16 +152,16 @@ function Home() {
                   </div>
                   <div className="item-card text-center">
                     <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                      <img src={BookmarkIcon} alt="BookmarkIcon" />
                     </div>
                     <div className="item-details">
                       <div className="header text-center">
                         <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                        <hr />
                       </div>
                       <div className="content">
                         <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                          <img src={ItemIcon} alt="ItemIcon" />
                         </div>
                         <div className="item-details">
                           <div className="price-bid-time">
@@ -184,16 +184,16 @@ function Home() {
                   </div>
                   <div className="item-card text-center">
                     <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                      <img src={BookmarkIcon} alt="BookmarkIcon" />
                     </div>
                     <div className="item-details">
                       <div className="header text-center">
                         <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                        <hr />
                       </div>
                       <div className="content">
                         <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                          <img src={ItemIcon} alt="ItemIcon" />
                         </div>
                         <div className="item-details">
                           <div className="price-bid-time">
@@ -216,16 +216,16 @@ function Home() {
                   </div>
                   <div className="item-card text-center">
                     <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                      <img src={BookmarkIcon} alt="BookmarkIcon" />
                     </div>
                     <div className="item-details">
                       <div className="header text-center">
                         <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                        <hr />
                       </div>
                       <div className="content">
                         <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                          <img src={ItemIcon} alt="ItemIcon" />
                         </div>
                         <div className="item-details">
                           <div className="price-bid-time">
@@ -255,12 +255,12 @@ function Home() {
               <div className="how-bid-works text-center">
                 <div className="header">
                   <p>HOW BIDDING GROUNDS WORK</p>
-                  <hr/>
+                  <hr />
                 </div>
                 <div className="content">
                   <div className="detail">
                     <div className="icon">
-                      <img src={MoneyIcon} alt="MoneyIcon"/>
+                      <img src={MoneyIcon} alt="MoneyIcon" />
                     </div>
                     <div className="text-content">
                       <p>EACH AUCTION STARTS AT $0. <span>AND EACH BID PLACED ADDS 1 PENNY TO THE  AUCTION PRICE.</span></p>
@@ -268,7 +268,7 @@ function Home() {
                   </div>
                   <div className="detail">
                     <div className="icon">
-                      <img src={ClockIcon} alt="ClockIcon"/>
+                      <img src={ClockIcon} alt="ClockIcon" />
                     </div>
                     <div className="text-content">
                       <p>THE AUCTION CLOCK <span>RESTARTS FROM 10 SECONDS EVERYTIME SOMEONE BIDS.</span></p>
@@ -276,7 +276,7 @@ function Home() {
                   </div>
                   <div className="detail">
                     <div className="icon">
-                      <img src={WinIcon} alt="WinIcon"/>
+                      <img src={WinIcon} alt="WinIcon" />
                     </div>
                     <div className="text-content">
                       <p>IF NO NEW BIDS BEFORE THE CLOCK RUNS OUT, <span>THE LAST BIDDER WIN.</span></p>
@@ -284,7 +284,7 @@ function Home() {
                   </div>
                   <div className="detail">
                     <div className="icon">
-                      <img src={BidsIcon} alt="BidsIcon"/>
+                      <img src={BidsIcon} alt="BidsIcon" />
                     </div>
                     <div className="text-content">
                       <p>BEFORE YOU TAKE PART IN ANY AUCTION YOU NEED TO BUY BIDS. <span>BIDS ARE CURRENTLY ON SALE FOR 13 CENTS EACH.</span></p>
@@ -302,7 +302,7 @@ function Home() {
             <div className="col-lg-12 text-center">
               <div className="header">
                 <h1>LIVE AUCTIONS</h1>
-                <hr/>
+                <hr />
                 <p>START BUYING FOR LESS. BID NOW.</p>
               </div>
             </div>
@@ -311,15 +311,15 @@ function Home() {
             <div className="col-lg-4 text-center">
               <div className="top-item">
                 <div className="item-bookmark">
-                  <img src={BookmarkIcon} alt="BookmarkIcon"/>
+                  <img src={BookmarkIcon} alt="BookmarkIcon" />
                 </div>
                 <div className="item-details">
                   <div className="header">
                     <h3>HARLEY DAVIDSON</h3>
-                    <hr/>
+                    <hr />
                   </div>
                   <div className="item-featured-image">
-                    <img src={ItemIcon} alt="ItemIcon"/>
+                    <img src={ItemIcon} alt="ItemIcon" />
                   </div>
                   <div className="item-actions">
                     <div>
@@ -333,468 +333,468 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-8">
-            <div className="item-list">
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+              <div className="item-list">
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
                     </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
                       </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
                         </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
                   </div>
                 </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-12">
-            <div className="item-list">
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
+              <div className="item-list">
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
                     </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
                       </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
                         </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
-                  </div>
-                  <div className="item-card text-center">
-                    <div className="item-bookmark">
-                      <img src={BookmarkIcon} alt="BookmarkIcon"/>
-                    </div>
-                    <div className="item-details">
-                      <div className="header text-center">
-                        <p>HARLEY DAVIDSON</p>
-                        <hr/>
-                      </div>
-                      <div className="content">
-                        <div className="item-featured-image">
-                          <img src={ItemIcon} alt="ItemIcon"/>
-                        </div>
-                        <div className="item-details">
-                          <div className="price-bid-time">
-                            <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
-                          </div>
-                          <div className="uploader-name">
-                            <p>MARVIN@ADMIN</p>
-                          </div>
-                        </div>
-                        <div className="item-actions">
-                          <div>
-                            <button className="btn btn-primary">BID NOW</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-retail-price">
-                      <p>RETAILS FOR $500	</p>
-                    </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
                   </div>
                 </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+                <div className="item-card text-center">
+                  <div className="item-bookmark">
+                    <img src={BookmarkIcon} alt="BookmarkIcon" />
+                  </div>
+                  <div className="item-details">
+                    <div className="header text-center">
+                      <p>HARLEY DAVIDSON</p>
+                      <hr />
+                    </div>
+                    <div className="content">
+                      <div className="item-featured-image">
+                        <img src={ItemIcon} alt="ItemIcon" />
+                      </div>
+                      <div className="item-details">
+                        <div className="price-bid-time">
+                          <p><span className="price">$ 2958.36</span> <span className="divider">|</span> <span className="bid-time">00:00:10</span></p>
+                        </div>
+                        <div className="uploader-name">
+                          <p>MARVIN@ADMIN</p>
+                        </div>
+                      </div>
+                      <div className="item-actions">
+                        <div>
+                          <button className="btn btn-primary">BID NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item-retail-price">
+                    <p>RETAILS FOR $500	</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-        </React.Fragment>
-    )
+    </React.Fragment>
+  )
 }
 
 export default Home
