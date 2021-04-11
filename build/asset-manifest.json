@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.eef3c7bb.chunk.css",
-    "main.js": "/static/js/main.504d54a8.chunk.js",
-    "main.js.map": "/static/js/main.504d54a8.chunk.js.map",
+    "main.css": "/static/css/main.061a1e67.chunk.css",
+    "main.js": "/static/js/main.d5b45d2c.chunk.js",
+    "main.js.map": "/static/js/main.d5b45d2c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5bb41ea6.js",
     "runtime-main.js.map": "/static/js/runtime-main.5bb41ea6.js.map",
     "static/js/2.98709dda.chunk.js": "/static/js/2.98709dda.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.4a0ae407.chunk.js": "/static/js/3.4a0ae407.chunk.js",
     "static/js/3.4a0ae407.chunk.js.map": "/static/js/3.4a0ae407.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.eef3c7bb.chunk.css.map": "/static/css/main.eef3c7bb.chunk.css.map",
+    "static/css/main.061a1e67.chunk.css.map": "/static/css/main.061a1e67.chunk.css.map",
     "static/js/2.98709dda.chunk.js.LICENSE.txt": "/static/js/2.98709dda.chunk.js.LICENSE.txt",
     "static/media/001-fire.f83f5363.png": "/static/media/001-fire.f83f5363.png",
     "static/media/7-2-motorcycle-png-clipart.4eef9ec6.png": "/static/media/7-2-motorcycle-png-clipart.4eef9ec6.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.5bb41ea6.js",
     "static/js/2.98709dda.chunk.js",
-    "static/css/main.eef3c7bb.chunk.css",
-    "static/js/main.504d54a8.chunk.js"
+    "static/css/main.061a1e67.chunk.css",
+    "static/js/main.d5b45d2c.chunk.js"
   ]
 }
