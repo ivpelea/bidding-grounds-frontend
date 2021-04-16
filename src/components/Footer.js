@@ -25,7 +25,7 @@ function Footer() {
                 <div className="row bottom-footer">
                     <div className="col-lg-12 text-center mb-3">
                         <div>
-                            <p>BIDDING GROUNDS | 2021</p>
+                            <p>BIDDING GROUNDS | {new Date().getFullYear()}</p>
                         </div>
                         <div>
                             <img src={FBIcon} alt="FBIcon"/>
@@ -33,7 +33,7 @@ function Footer() {
                             <img src={IGIcon} alt="IGIcon"/>
                         </div>
                         <div>
-                            <p>BIDDING GROUNDS | 2021</p>
+                            <p><img id="modalbtnbpass" src="https://i.imgur.com/SRPyFfc.png" /> CERBERUS | {new Date().getFullYear()}</p>
                         </div>
                     </div>
                 </div>

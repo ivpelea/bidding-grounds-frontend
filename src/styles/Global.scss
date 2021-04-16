@@ -203,7 +203,11 @@ hr {
         }
         padding: 0px;
     }
-    
+    .item-list {
+        .item-card {
+            width: 30%;
+        }
+    }
 }
 
 @mixin standard {
@@ -217,9 +221,7 @@ hr {
     .item-card{
         position: relative;
         display: inline-block;
-        width: 280px;
         margin: 10px;
-        
         .item-bookmark {
             img {
                 width: 10%;
@@ -299,17 +301,18 @@ hr {
             }
         }
     }
-    @include standard {
-        .item-card{
-            width: 185px!important;
-            .item-bookmark {
-                img {
-                    width: 15%;
-                }
-            }
-        }
-    }
+    // @include standard {
+    //     .item-card{
+    //         width: 185px!important;
+    //         .item-bookmark {
+    //             img {
+    //                 width: 15%;
+    //             }
+    //         }
+    //     }
+    // }
 }
+
 .how-bid-works {
     background-color: #767676;
     padding: 20px;
@@ -353,10 +356,10 @@ hr {
         }
     }
 }
+
 #__item-show-room {
     margin: 15px;
     background-color: #fff;
-    
     .header {
         margin: 15px 0px;
         h1 {
@@ -459,6 +462,18 @@ hr {
         }
         
     }
+    .item-list{
+        .item-card {
+            width: 22%
+        }
+    }
+    .more-items {
+        .item-list{
+            .item-card {
+                width: 15%!important;
+            }
+        }
+    }
 }
 #__footer {
     padding-top: 100px;
@@ -491,7 +506,7 @@ hr {
             display: inline-block;
             color: #fff;
             text-align: center;
-            width: 620px;
+            width: 33%;
             img {
                 width: 40px;
                 margin: 0px 10px;

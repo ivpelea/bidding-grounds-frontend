@@ -59,10 +59,13 @@ function MyVerticallyCenteredModal(props) {
                     </div>
                 </div>
             </div>
-            <div className="body-action mt-5 mb-3">
+            <div className="body-action mt-5 mb-5">
                 <a href="#test">
                     <img src={StartBiddingIcon} alt="StartBiddingIcon"/>
                 </a>
+            </div>
+            <div>
+                <p>© BIDDING GROUNDS | {new Date().getFullYear()}</p>
             </div>
         </Modal.Body>
         <Modal.Footer>

@@ -305,7 +305,7 @@ function ItemShowroom() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row more-items">
             <div className="col-lg-12">
               <div className="item-list">
                 <div className="item-card text-center">
