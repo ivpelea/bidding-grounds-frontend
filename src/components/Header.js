@@ -3,6 +3,7 @@ import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
 import HeaderIcon from '../assets/images/HeaderLogo.png'
 import BidPacks from './Modals/BidPacks';
 import HowBidWorks from './Modals/HowBidWorks';
+import SignIn from './Modals/SignIn';
 import SignUp from './Modals/SignUp';
 
 function Header() {
@@ -41,6 +42,11 @@ function Header() {
                 show={showUserSignUp}
                 onHide={() => setShowUserSignUp(false)}
             />
+            
+            <SignIn 
+                show={showUserSignIn}
+                onHide={() => setShowUserSignIn(false)}
+            />
             <section id="__bidding-header">
                 <div className="container-fluid">
                     <div className="row">
@@ -60,7 +66,7 @@ function Header() {
                                     <Nav>
                                         <Nav.Link href="#deets" onClick={handleShowUserSignUp.bind(this)}>SIGN UP</Nav.Link>
                                         <p>|</p>
-                                        <Nav.Link href="#deets">SIGN IN</Nav.Link>
+                                        <Nav.Link href="#deets" onClick={handleShowUserSignIn.bind(this)}>SIGN IN</Nav.Link>
                                     </Nav>
                                 </Navbar.Collapse>
                             </Navbar>
