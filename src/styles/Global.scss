@@ -72,7 +72,7 @@ hr {
     }
     .menu-content {
         background-color: #fff;
-        height: 600px;
+        height: 100%;
         width: 82%;
     }
     @include standard {
@@ -482,6 +482,51 @@ hr {
 
 
 // CLASSES
+
+.site-report-card {
+    margin: auto;
+    padding-top: 30px;
+    // max-width: 380px;
+    .header {
+        margin-bottom: 20px;
+        div {
+            display: inline-block;
+            vertical-align: middle;
+            
+        }
+        .icon {
+            width: 40px;
+            margin-right: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            color: black;
+            text-transform: uppercase;
+            h1 {
+                margin: 0%;
+                font-weight: 600;
+            }
+        }
+    }
+    .content {
+        text-align: left;
+        padding-left: 50px;
+        font-family: 'Josefin Sans';
+        p {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .total {
+            color: #ffd33a;
+            font-size: 45px;    
+            font-weight: 600;
+        }
+    }
+}
 
 .modal-content {
     color: #545454;
