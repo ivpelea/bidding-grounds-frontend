@@ -13,6 +13,8 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
+import ItemHighlight from './components/ItemHighlight';
+import AdminHome from './components/AdminControl/AdminHome';
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
         </Route>
         <Route exact path="/item-showroom">
           <ItemShowroom />
+        </Route>
+        <Route exact path="/item-highlight">
+          <ItemHighlight />
+        </Route>
+        <Route exact path="/administrator-account-dashboard">
+          <AdminHome />
         </Route>
       </Switch>
     </Router>

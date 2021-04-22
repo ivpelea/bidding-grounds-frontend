@@ -6,6 +6,14 @@ $main-font-color: #4b4b4b;
 $lite-font-color: #545454;
 $dark-bg-color: #4b4b4b;
 
+// MIXINS]
+
+@mixin standard {
+    @media only screen and (max-width:1366px) {
+        @content;
+    }
+}
+
 // TAGS
 body {
     background-color: $main-bg-color;
@@ -16,6 +24,91 @@ hr {
 }
 
 // IDS 
+
+#__user-profile-home {
+    margin-bottom: 20px;
+    color: $lite-font-color;
+    .user-info {
+        padding: 15px 20px;
+        background-color: #fff;
+        .content {
+            div {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .image {
+                width: 55px;
+                margin-right: 10px;
+                img {
+                    width: 100%;
+                }
+            }
+            .text {
+                h1{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .user-menu, .menu-content{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .user-menu {
+        height: 100%;
+        width: 18%;
+        text-align: right;
+        background-color: #fff;
+        ul {
+            margin-top: 30px;
+            list-style-type:none;
+            li {
+                text-transform: uppercase;
+                font-size: 22px;
+                cursor: pointer;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .menu-content {
+        background-color: #fff;
+        height: 600px;
+        width: 82%;
+    }
+    @include standard {
+        .user-menu {
+            width: 25%;
+        }
+        .menu-content {
+            width: 75%;
+        }
+        
+    }
+}
+
+#__item-highlight {
+    padding: 25px 10px;
+    background-color: #fff;
+    .selected-item-details {
+        display:flex;
+        height: 100%;
+        .text {
+            background-color: #f0f0f0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .item-list {
+        .item-card {
+            margin: 0;
+        }
+    }
+   
+    .selected-item, .selected-item-details, .other-items{
+
+    }
+}
+
 #__user-control-modal {
     .body-content {
         text-align: left;
@@ -257,7 +350,7 @@ hr {
             img {
                 width: 10%;
                 float: right;
-                margin-top: -13px;
+                margin-top: -5%;
                 /* margin-right: 0%; */
                 right: -1px;
                 position: absolute;
@@ -529,7 +622,7 @@ hr {
             img {
                 width: 10%;
                 float: right;
-                margin-top: -13px;
+                margin-top: -5%;
                 /* margin-right: 0%; */
                 right: -1px;
                 position: absolute;
@@ -659,10 +752,3 @@ hr {
     }
 }
 
-// MIXINS]
-
-@mixin standard {
-    @media only screen and (max-width:1366px) {
-        @content;
-    }
-}

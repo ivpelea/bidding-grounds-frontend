@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import HeaderIcon from '../assets/images/HeaderLogo.png'
 import BidPacks from './Modals/BidPacks';
 import HowBidWorks from './Modals/HowBidWorks';
@@ -58,8 +59,8 @@ function Header() {
                                 <Navbar.Collapse id="responsive-navbar-nav">
                                     {/* CENTER NAV MENU */}
                                     <Nav className="mx-auto">
-                                        <Nav.Link href="/">START BIDDING</Nav.Link>
-                                        <Nav.Link href="/item-showroom">ITEM SHOWROOM</Nav.Link>
+                                        <Link to="/" className="nav-link">START BIDDING</Link>
+                                        <Link to="/item-showroom" className="nav-link">ITEM SHOWROOM</Link>
                                         <Nav.Link href="#how-it-works" onClick={handleShowHowBidWorks.bind(this)}>HOW IT WORKS</Nav.Link>
                                         <Nav.Link href="#bid-packs" onClick={handleShowBidPacks.bind(this)}>BID PACKS</Nav.Link>
                                         </Nav>
