@@ -5,10 +5,14 @@ import Header from '../Header';
 import Dashboard from './Dashboard';
 import UserManagement from './UserManagement';
 import ItemManagement from './ItemManagement';
+import { Link } from 'react-router-dom';
 
 function AdminHome() {
-    const [currentTab, setCurrentTab] = useState("dashboard");
-
+    const [currentTab, setCurrentTab] = useState(window.location.toString().split('#')[1]);
+    
+    const showUserManagement = () => {
+        // alert(text);
+    }
     return (
         <React.Fragment>
             <Header />
@@ -33,23 +37,24 @@ function AdminHome() {
                             <div className="user-menu">
                                 <div className="border-top border-right ml-4 pr-4" style={{height: "100%"}}>
                                     <ul>
-                                        <li onClick={() => setCurrentTab("dashboard")} style={{ color: currentTab == "dashboard" ? "black" : null }}>
-                                            Dashboard
+                                        <li onClick={() => setCurrentTab("dashboard")} >
+                                            <Link style={{ color: currentTab == "dashboard" ? "black" : null }} to="#dashboard">Dashboard</Link>
                                         </li>
-                                        <li onClick={() => setCurrentTab("user-management")} style={{ color: currentTab == "user-management" ? "black" : null }}>
-                                            User Management
+                                        <li onClick={() => setCurrentTab("user-management")} >
+                                            
+                                            <Link style={{ color: currentTab == "user-management" ? "black" : null }} to="#user-management">User Management</Link>
                                         </li>
-                                        <li onClick={() => setCurrentTab("item-management")} style={{ color: currentTab == "item-management" ? "black" : null }}>
-                                            Item Management
+                                        <li onClick={() => setCurrentTab("item-management")} >
+                                            <Link style={{ color: currentTab == "item-management" ? "black" : null }} to="#item-management">Item Management</Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="menu-content">
-                                <div className="border-top pl-4 mr-4">
+                                <div className="border-top pl-4 mr-4 mb-5">
                                 {
                                     currentTab == "dashboard" ?
-                                        <Dashboard />
+                                        <Dashboard setCurrentTab={setCurrentTab} />
                                     :
                                     currentTab == "user-management" ?
                                         <UserManagement />
@@ -57,7 +62,7 @@ function AdminHome() {
                                     currentTab == "item-management" ?
                                         <ItemManagement />
                                     :
-                                        null
+                                        <Dashboard setCurrentTab={setCurrentTab} />
                                 }
                                 </div>
                             </div>

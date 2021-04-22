@@ -5,7 +5,7 @@ import AdminItemShowroomIcon from '../../assets/images/admin-item-showroom-icon.
 import AdminSiteIncomeIcon from '../../assets/images/admin-site-income-icon.png'
 import AdminSiteReportIcon from '../../assets/images/admin-site-report-icon.png'
 
-function Dashboard() {
+function Dashboard(props) {
     return (
         <React.Fragment>
             <div className="row">
@@ -21,11 +21,11 @@ function Dashboard() {
                         </div>
                         <div className="content">
                             <p>current user account:</p>
-                            <p className="total">32</p>
+                            <Link to="#user-management" className="total" onClick={() => {props.setCurrentTab("user-management")}}>32</Link>
                         </div>
                         <div className="content">
                             <p>user registered this month:</p>
-                            <p className="total">1</p>
+                            <p className="total"><Link to="#user-management" className="total" onClick={() => {props.setCurrentTab("user-management")}}>32</Link></p>
                         </div>
                     </div>
                     <div className="site-report-card">
@@ -39,11 +39,11 @@ function Dashboard() {
                         </div>
                         <div className="content">
                             <p>current item count:</p>
-                            <p className="total">50</p>
+                            <p className="total"><Link to="#item-management" className="total" onClick={() => {props.setCurrentTab("item-management")}}>50</Link></p>
                         </div>
                         <div className="content">
-                            <p>live item count</p>
-                            <p className="total">48</p>
+                            <p>live item count:</p>
+                            <p className="total"><Link to="#item-management" className="total" onClick={() => {props.setCurrentTab("item-management")}}>48</Link></p>
                         </div>
                     </div>
                 </div>
@@ -58,16 +58,16 @@ function Dashboard() {
                             </div>
                         </div>
                         <div className="content">
-                            <p>current user account</p>
-                            <p className="total">32</p>
+                            <p>total income for this month:</p>
+                            <p className="total">$3392.42</p>
                         </div>
                         <div className="content">
-                            <p>current user account</p>
-                            <p className="total">32</p>
+                            <p>total income for this year:</p>
+                            <p className="total">$3212.22</p>
                         </div>
                         <div className="content">
-                            <p>current user account</p>
-                            <p className="total">32</p>
+                            <p>total income since launch:</p>
+                            <p className="total">$32.1231</p>
                         </div>
                     </div>
                     <div className="site-report-card">
@@ -80,15 +80,19 @@ function Dashboard() {
                             </div>
                         </div>
                         <div className="content">
-                            <p>current user account</p>
+                            <p>total visits for this day:</p>
                             <p className="total">32</p>
                         </div>
                         <div className="content">
-                            <p>current user account</p>
+                            <p>total visits for this week:</p>
                             <p className="total">32</p>
                         </div>
                         <div className="content">
-                            <p>current user account</p>
+                            <p>total visits for this month:</p>
+                            <p className="total">32</p>
+                        </div>
+                        <div className="content">
+                            <p>total visits for this year:</p>
                             <p className="total">32</p>
                         </div>
                     </div>
