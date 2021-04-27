@@ -77,6 +77,122 @@ hr {
         background-color: #fff;
         height: 100%;
         width: 82%;
+        .admin-management {
+            .site-report-card {
+                .header {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .table-action-wrap {
+            height: 100%;
+            div {
+                display: inline-block;
+                vertical-align: middle;
+                p {
+                    margin: 0;
+                    input {
+                        width: 300px;
+                        font-size: 16px;
+                        border-width: 0px;
+                        border-color: #cccccc;
+                        background-color: #e8e8e8;
+                        color: #545454;
+                        border-style: solid;
+                        border-radius: 0px;
+                        box-shadow: -50px 0px 5px rgb(66 66 66 / 0%);
+                        text-shadow: 0px 0px 5px rgb(66 66 66 / 0%);
+                        font-family: 'Righteous', cursive;
+                        color: #545454;
+                    }
+                }
+            }
+            .action-text {
+                margin-right: 10px;
+            }
+            .icon {
+                cursor: pointer;
+                width: 30px;
+                img {
+                    width: 100%;
+                }
+                .overlay-layer{
+                    width:200px;
+                    height:40px;
+                    position:absolute;
+                    margin-top:-40px;
+                    opacity:0.5;
+                    background-color:#000000;
+                    z-index:0;
+                    font-size:25px;
+                    color:#FFFFFF;
+                    text-align:center;
+                    line-height:40px;
+                }
+                .upload_btn{
+                    position:absolute;
+                    width:200px;
+                    height:40px;
+                    margin-top:-40px;
+                    z-index:10;
+                }
+                .overlay-layer{
+                    width:200px;
+                    height:40px;
+                    position:absolute;
+                    margin-top:-40px;
+                    opacity:0.5;
+                    background-color:#000000;
+                    z-index:0;
+                    font-size:25px;
+                    color:#FFFFFF;
+                    text-align:center;
+                    line-height:40px;
+                }
+                .upload_btn{
+                   input {
+                    position:absolute;
+                    width:200px;
+                    height:40px;
+                    margin-top:-40px;
+                    z-index:10;
+                    opacity:0;
+                   }
+                }
+            }
+        }
+        .data-list-table {
+            th, td {
+                img {
+                    width: 20px;
+                   
+                }
+                text-align: center;
+                vertical-align: middle;
+            }
+            thead {
+                th {
+                    background-color: #282828;
+                    color: white;
+                    border-color: #282828;
+                    border-bottom: 3px solid orange;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+            tbody {
+                td {
+                    font-family: 'Josefin Sans';
+                    font-size: 14px;
+                    img {
+                        cursor: pointer;
+                    }
+                }
+                .active {
+                    color:green
+                }
+            }
+        }
     }
     @include standard {
         .user-menu {
