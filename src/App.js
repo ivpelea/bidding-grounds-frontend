@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import ItemHighlight from './components/ItemHighlight';
 import AdminHome from './components/AdminControl/AdminHome';
+import CheckoutForm from './components/CheckoutForm';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path="/administrator-account-dashboard">
           <AdminHome />
+        </Route>
+        <Route exact path="/stripe-checkout-mobile/:token_id/:bid_points">
+          <CheckoutForm />
         </Route>
       </Switch>
     </Router>

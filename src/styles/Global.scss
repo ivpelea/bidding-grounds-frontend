@@ -307,7 +307,7 @@ hr {
     }
 }
 
-#__bid-packs-modal {
+#__bid-packs-modal, #__bid-packs-payment-mobile {
     .body-content {
         .text-image {
             div {
@@ -372,6 +372,17 @@ hr {
         }
     }
     
+}
+
+#__bid-packs-payment-mobile {
+    .body-content {
+        .text-image {
+            .text {
+                width: 100%!important;
+            }
+        }
+
+    }
 }
 
 #__bidding-home {
@@ -602,6 +613,11 @@ hr {
 
 // CLASSES
 
+.StripeElement {
+    border: 1px solid #4b4b4b;
+    padding: 10px;
+    border-radius: 5px;
+}
 .site-report-card {
     margin: auto;
     padding-top: 50px;
