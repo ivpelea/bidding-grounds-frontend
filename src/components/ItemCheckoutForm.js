@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { CardElement, Elements, useElements, useStripe } from '@stripe/react-stripe-js';
 // import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import BidPackIcon from '../assets/images/bid-pack-icon.png'
 import BidPack1Icon from '../assets/images/bid-pack-1.png'
 import BidPack2Icon from '../assets/images/bid-pack-2.png'
