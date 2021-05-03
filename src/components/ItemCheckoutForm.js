@@ -115,6 +115,9 @@ const stripePromise = loadStripe('pk_test_51HWMrRLc7T29UIG88y1kmzrWU8RT3CBeotjmg
 const ItemCheckoutForm = () => {
     const { stripe_payment_intent_id } = useParams();
     const [paymentIntentData, setPaymentIntentData] = useState(null);
+    const [isError, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
         window.fetch("https://bg-be.herokuapp.com/api/v1/payments/retrieve-payment-via-intent-id", {
@@ -128,9 +131,21 @@ const ItemCheckoutForm = () => {
                 return res.json();
             })
             .then(data => {
-                setPaymentIntentData(data.payment_order);
+                if(data.success == false){
+                   
+                    setError(true);
+                    setErrorMessage(data.message);
+                }else{
+                    setPaymentIntentData(data.payment_order);
+                }
             });
     }, []);
+
+    if(isError == true){
+        return (
+            <center>{errorMessage}</center>
+        );
+    }
     if(paymentIntentData == null){
         return (
             <center>Loading...</center>
