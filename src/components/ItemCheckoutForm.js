@@ -54,7 +54,7 @@ const StripeCheckoutForm = (props) => {
         ev.preventDefault();
         setProcessing(true);
         
-        const { stripe_client_secret } = paymentIntentData;
+        const { stripe_client_secret, stripe_payment_intent_id } = paymentIntentData;
 
         const payload = await stripe.confirmCardPayment(stripe_client_secret, {
             payment_method: {
@@ -72,7 +72,7 @@ const StripeCheckoutForm = (props) => {
 
             if ( redirectLinkingURI ) {
                 // Redirect to app
-                window.location.href = redirectLinkingURI + `payment_status=${encodeURIComponent('success')}`;
+                window.location.href = redirectLinkingURI + `payment_status=${encodeURIComponent('success')}&trans_id=${stripe_payment_intent_id}`;
             }
         }
     };
