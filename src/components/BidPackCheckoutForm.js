@@ -24,8 +24,7 @@ const StripeCheckoutForm = () => {
 
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
-        window
-            .fetch("https://bg-be.herokuapp.com/api/v1/payments/calculate-payment-for-web-payment", {
+        window.fetch("https://bg-be.herokuapp.com/api/v1/payments/calculate-payment-for-web-payment", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -130,7 +129,7 @@ const StripeCheckoutForm = () => {
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe('pk_test_51HWMrRLc7T29UIG88y1kmzrWU8RT3CBeotjmgJ2UeGOI9M1V5nEbNaoLEae9CEfULhWKQ73CPi57kQchh4fxXhMc00k0mkPao7');
 
-const CheckoutForm = () => {
+const BidPackCheckoutForm = () => {
     const { token_id, bid_points } = useParams();
     return (
         <section id="__bid-packs-payment-mobile">
@@ -300,4 +299,4 @@ const CheckoutForm = () => {
     );
 };
 
-export default CheckoutForm;
+export default BidPackCheckoutForm;

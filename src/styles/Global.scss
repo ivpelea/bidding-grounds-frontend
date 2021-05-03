@@ -307,7 +307,7 @@ hr {
     }
 }
 
-#__bid-packs-modal, #__bid-packs-payment-mobile {
+#__bid-packs-modal, #__payment-mobile {
     .body-content {
         .text-image {
             div {
@@ -374,8 +374,48 @@ hr {
     
 }
 
-#__bid-packs-payment-mobile {
+#__payment-mobile {
     .body-content {
+        .payment-breakdown-wrap {
+            font-family: 'Josefin Sans';
+            font-weight: 600;
+            text-align: left;
+            p {
+                margin: 0;
+            }
+            .header {
+                text-align: center;
+                background-color: #E0A267;
+                padding: 20px 10px;
+                border: 1px solid #E0A267;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            .payment-breakdown-text{
+                
+                background-color: #F3DCC6;
+                border: 1px solid #F3DCC6;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                hr {
+                    margin: 5px 0px;
+                }
+                p {
+                    margin: 0;
+                    font-weight: 400;
+                    color: #7A6E63;
+                    font-style: italic;
+                }
+                .description{
+                    width: 120px;
+                    text-align: left;
+                }
+                .amount{
+                    width: 120px;
+                    text-align: left;
+                }
+            }
+        }
         .text-image {
             .text {
                 width: 100%!important;

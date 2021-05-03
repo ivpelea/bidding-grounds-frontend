@@ -15,7 +15,8 @@ import {
 } from "react-router-dom";
 import ItemHighlight from './components/ItemHighlight';
 import AdminHome from './components/AdminControl/AdminHome';
-import CheckoutForm from './components/CheckoutForm';
+import BidPackCheckoutForm from './components/BidPackCheckoutForm';
+import ItemCheckoutForm from './components/ItemCheckoutForm';
 
 function App() {
   return (
@@ -34,7 +35,10 @@ function App() {
           <AdminHome />
         </Route>
         <Route exact path="/stripe-checkout-mobile/:token_id/:bid_points">
-          <CheckoutForm />
+          <BidPackCheckoutForm />
+        </Route>
+        <Route exact path="/item-checkout-mobile/:stripe_payment_intent_id">
+          <ItemCheckoutForm />
         </Route>
       </Switch>
     </Router>
