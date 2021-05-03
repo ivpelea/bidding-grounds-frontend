@@ -20,6 +20,11 @@ const StripeCheckoutForm = (props) => {
     const elements = useElements();
     const { paymentIntentData } = props;
 
+    // Get redirecting linking URI to Mobile App
+    const queries = useQuery();
+
+    const redirectLinkingURI = queries.get('linkingURI');
+
     const cardStyle = {
         style: {
             base: {
@@ -64,6 +69,10 @@ const StripeCheckoutForm = (props) => {
             setError(null);
             setProcessing(false);
             setSucceeded(true);
+            if ( redirectLinkingURI ) {
+                // Redirect to app
+                window.location.href = redirectLinkingURI + `payment_status=${encodeURIComponent('success')}`;
+            }
         }
     };
 
@@ -106,6 +115,10 @@ const StripeCheckoutForm = (props) => {
             {/* <p>Client Secret: {clientSecret}</p> */}
         </React.Fragment>
     );
+}
+
+const useQuery = () => {
+    return new URLSearchParams(useLocation().search);
 }
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
