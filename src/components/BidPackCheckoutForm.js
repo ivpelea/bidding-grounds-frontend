@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { CardElement, Elements, useElements, useStripe } from '@stripe/react-stripe-js';
 // import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import BidPackIcon from '../assets/images/bid-pack-icon.png'
 import BidPack1Icon from '../assets/images/bid-pack-1.png'
 import BidPack2Icon from '../assets/images/bid-pack-2.png'
@@ -21,6 +21,11 @@ const StripeCheckoutForm = () => {
     const elements = useElements();
 
     const { token_id, bid_points } = useParams();
+
+    // Get redirecting linking URI to Mobile App
+    const queries = useQuery();
+
+    const redirectLinkingURI = queries.get('linkingURI');
 
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
@@ -81,6 +86,10 @@ const StripeCheckoutForm = () => {
             setError(null);
             setProcessing(false);
             setSucceeded(true);
+            if ( redirectLinkingURI ) {
+                // Redirect to app
+                window.location.href = redirectLinkingURI + `payment_status=${encodeURIComponent('success')}`;
+            }
         }
     };
 
@@ -123,6 +132,10 @@ const StripeCheckoutForm = () => {
             {/* <p>Client Secret: {clientSecret}</p> */}
         </React.Fragment>
     );
+}
+
+const useQuery = () => {
+    return new URLSearchParams(useLocation().search);
 }
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
