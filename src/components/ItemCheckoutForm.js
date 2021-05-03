@@ -69,6 +69,7 @@ const StripeCheckoutForm = (props) => {
             setError(null);
             setProcessing(false);
             setSucceeded(true);
+
             if ( redirectLinkingURI ) {
                 // Redirect to app
                 window.location.href = redirectLinkingURI + `payment_status=${encodeURIComponent('success')}`;
