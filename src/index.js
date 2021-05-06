@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { positions, Provider } from "react-alert";
+import AlertMUITemplate from "react-alert-template-mui";
+
+const options = {
+  position: positions.MIDDLE
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider template={AlertMUITemplate} {...options}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

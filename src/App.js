@@ -1,4 +1,7 @@
 import React from 'react'
+import { Provider, useSelector, useDispatch } from 'react-redux';
+import { store, persistor } from './redux/index';
+import { PersistGate } from 'redux-persist/integration/react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
@@ -20,28 +23,32 @@ import ItemCheckoutForm from './components/ItemCheckoutForm';
 
 function App() {
   return (
-    <Router basename="/">
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/item-showroom">
-          <ItemShowroom />
-        </Route>
-        <Route exact path="/item-highlight">
-          <ItemHighlight />
-        </Route>
-        <Route exact path="/administrator-account-dashboard">
-          <AdminHome />
-        </Route>
-        <Route exact path="/stripe-checkout-mobile/:token_id/:bid_points">
-          <BidPackCheckoutForm />
-        </Route>
-        <Route exact path="/item-checkout-mobile/:stripe_payment_intent_id">
-          <ItemCheckoutForm />
-        </Route>
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router basename="/">
+        <PersistGate persistor={persistor}>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/item-showroom">
+              <ItemShowroom />
+            </Route>
+            <Route exact path="/item-highlight">
+              <ItemHighlight />
+            </Route>
+            <Route exact path="/account-dashboard">
+              <AdminHome />
+            </Route>
+            <Route exact path="/stripe-checkout-mobile/:token_id/:bid_points">
+              <BidPackCheckoutForm />
+            </Route>
+            <Route exact path="/item-checkout-mobile/:stripe_payment_intent_id">
+              <ItemCheckoutForm />
+            </Route>
+          </Switch>
+        </PersistGate>
+      </Router>
+    </Provider>
   );
 }
 

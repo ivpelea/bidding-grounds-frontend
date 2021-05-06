@@ -24,7 +24,13 @@ hr {
 }
 
 // IDS 
-
+#__bidding-header {
+    .nav-link {
+        img {
+            width: 30px;
+        }
+    }
+}
 #__user-profile-home {
     margin-bottom: 20px;
     color: $lite-font-color;

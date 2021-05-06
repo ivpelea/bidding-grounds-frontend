@@ -108,7 +108,7 @@ const StripeCheckoutForm = (props) => {
                     succeeded ?
                         <p>
                             Payment succeeded!
-                    </p>
+                        </p>
                         : null
                 }
             </form>
